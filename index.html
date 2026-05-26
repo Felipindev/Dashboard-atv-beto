@@ -1,11 +1,490 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pt-BR">
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Dashboard Beto</title>
+  <title>Dashboard</title>
+
+  <link
+    rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
+  >
+
+  <link rel="stylesheet" href="style.css">
 </head>
 <body>
-  
+
+  <div class="dashboard">
+
+    <aside class="sidebar">
+
+      <div class="logo">
+        <i class="fa-solid fa-layer-group"></i>
+        <h1>Purple</h1>
+      </div>
+
+      <div class="sidebar-user">
+
+        <img
+          src="https://i.pravatar.cc/100"
+          alt="Usuário"
+          class="user-image"
+        >
+
+        <div class="user-info">
+          <h3>David Grey. H</h3>
+          <p>Project Manager</p>
+        </div>
+
+        <i class="fa-solid fa-bookmark user-bookmark"></i>
+
+      </div>
+
+      <nav class="menu">
+
+        <a href="#" class="menu-item active">
+          <span>Dashboard</span>
+
+          <div class="menu-icons">
+            <i class="fa-solid fa-house"></i>
+          </div>
+        </a>
+
+        <a href="#" class="menu-item">
+          <span>Page Layouts</span>
+
+          <div class="menu-icons">
+            <i class="fa-solid fa-angle-left"></i>
+            <i class="fa-solid fa-grip"></i>
+          </div>
+        </a>
+
+        <a href="#" class="menu-item">
+          <span>Apps</span>
+
+          <div class="menu-icons">
+            <i class="fa-solid fa-angle-left"></i>
+            <i class="fa-solid fa-code-branch"></i>
+          </div>
+        </a>
+
+        <a href="#" class="menu-item">
+          <span>Widgets</span>
+
+          <div class="menu-icons">
+            <i class="fa-solid fa-message"></i>
+          </div>
+        </a>
+
+        <a href="#" class="menu-item">
+          <span>Sidebar Layouts</span>
+
+          <div class="menu-icons">
+            <i class="fa-solid fa-angle-left"></i>
+            <i class="fa-solid fa-bars"></i>
+          </div>
+        </a>
+
+        <a href="#" class="menu-item">
+          <span>Basic UI Elements</span>
+
+          <div class="menu-icons">
+            <i class="fa-solid fa-angle-left"></i>
+            <i class="fa-regular fa-circle"></i>
+          </div>
+        </a>
+
+        <a href="#" class="menu-item">
+          <span>Advanced UI</span>
+
+          <div class="menu-icons">
+            <i class="fa-solid fa-angle-left"></i>
+            <i class="fa-regular fa-window-maximize"></i>
+          </div>
+        </a>
+
+        <a href="#" class="menu-item">
+          <span>Popups</span>
+
+          <div class="menu-icons">
+            <i class="fa-solid fa-message"></i>
+          </div>
+        </a>
+
+        <a href="#" class="menu-item">
+          <span>Notifications</span>
+
+          <div class="menu-icons">
+            <i class="fa-solid fa-bell"></i>
+          </div>
+        </a>
+
+        <a href="#" class="menu-item">
+          <span>Icons</span>
+
+          <div class="menu-icons">
+            <i class="fa-solid fa-angle-left"></i>
+            <i class="fa-solid fa-suitcase"></i>
+          </div>
+        </a>
+
+        <a href="#" class="menu-item">
+          <span>Forms</span>
+
+          <div class="menu-icons">
+            <i class="fa-solid fa-angle-left"></i>
+            <i class="fa-solid fa-list"></i>
+          </div>
+        </a>
+
+        <a href="#" class="menu-item">
+          <span>Text editors</span>
+
+          <div class="menu-icons">
+            <i class="fa-solid fa-file-lines"></i>
+          </div>
+        </a>
+
+        <a href="#" class="menu-item">
+          <span>Code editors</span>
+
+          <div class="menu-icons">
+            <i class="fa-solid fa-camera"></i>
+          </div>
+        </a>
+
+      </nav>
+
+    </aside>
+
+    <div class="content">
+
+      <header class="header">
+
+        <div class="header-left">
+
+          <button class="menu-button">
+            <i class="fa-solid fa-bars"></i>
+          </button>
+
+          <div class="search-box">
+
+            <i class="fa-solid fa-magnifying-glass"></i>
+
+            <input
+              type="text"
+              placeholder="Search projects"
+              color="#f3f3f3"
+            >
+
+          </div>
+
+        </div>
+
+        <div class="header-right">
+
+          <div class="header-user">
+
+            <img
+              src="https://i.pravatar.cc/100"
+              alt="Usuário"
+            >
+
+            <span>David Greymaax</span>
+
+            <i class="fa-solid fa-angle-down"></i>
+
+          </div>
+
+          <i class="fa-solid fa-expand header-icon"></i>
+
+          <i class="fa-regular fa-envelope header-icon"></i>
+
+          <i class="fa-regular fa-bell header-icon"></i>
+
+          <i class="fa-solid fa-power-off header-icon"></i>
+
+          <i class="fa-solid fa-bars-staggered header-icon"></i>
+
+        </div>
+
+      </header>
+
+      <main class="main">
+
+        <div class="main-top">
+
+          <div class="dashboard-title">
+
+            <div class="dashboard-icon">
+              <i class="fa-solid fa-house"></i>
+            </div>
+
+            <h4>Dashboard</h4>
+
+          </div>
+
+          <p class="overview-text">
+            Overview
+            <i class="fa-solid fa-circle-info"></i>
+          </p>
+
+        </div>
+
+        <section class="cards">
+
+          <div class="card sales-card">
+
+            <div class="card-top">
+
+              <div>
+                <p class="card-label">Weekly Sales</p>
+                <h2>$ 15,0000</h2>
+              </div>
+
+              <i class="fa-solid fa-chart-line"></i>
+
+            </div>
+
+            <p class="card-info">Increased by 60%</p>
+
+            <div class="circle circle-1"></div>
+            <div class="circle circle-2"></div>
+
+          </div>
+
+          <div class="card orders-card">
+
+            <div class="card-top">
+
+              <div>
+                <p class="card-label">Weekly Orders</p>
+                <h2>45,6334</h2>
+              </div>
+
+              <i class="fa-regular fa-bookmark"></i>
+
+            </div>
+
+            <p class="card-info">Decreased by 10%</p>
+
+            <div class="circle circle-1"></div>
+            <div class="circle circle-2"></div>
+
+          </div>
+
+          <div class="card visitors-card">
+
+            <div class="card-top">
+
+              <div>
+                <p class="card-label">Visitors Online</p>
+                <h2>95,5741</h2>
+              </div>
+
+              <i class="fa-solid fa-diamond"></i>
+
+            </div>
+
+            <p class="card-info">Increased by 5%</p>
+
+            <div class="circle circle-1"></div>
+            <div class="circle circle-2"></div>
+
+          </div>
+
+        </section>
+
+      <section class="graphs">
+
+        <div class="graph-box large-graph">
+
+          <div class="graph-header">
+
+            <h3>Visit And Sales Statistics</h3>
+
+            <div class="graph-legends">
+
+              <div class="legend">
+                <div class="legend-color purple"></div>
+                <span>CHN</span>
+              </div>
+
+              <div class="legend">
+                <div class="legend-color pink"></div>
+                <span>USA</span>
+              </div>
+
+              <div class="legend">
+                <div class="legend-color blue"></div>
+                <span>UK</span>
+              </div>
+
+            </div>
+
+          </div>
+
+          <div class="chart">
+
+            <div class="chart-lines">
+
+              <div class="line"></div>
+              <div class="line"></div>
+              <div class="line"></div>
+              <div class="line"></div>
+
+            </div>
+
+            <div class="bars">
+
+              <div class="month">
+
+                <div class="bars-group">
+                  <div class="bar purple-bar h40"></div>
+                  <div class="bar pink-bar h80"></div>
+                  <div class="bar blue-bar h150"></div>
+                </div>
+
+                <span>JAN</span>
+
+              </div>
+
+              <div class="month">
+
+                <div class="bars-group">
+                  <div class="bar purple-bar h80"></div>
+                  <div class="bar pink-bar h60"></div>
+                  <div class="bar blue-bar h20"></div>
+                </div>
+
+                <span>FEB</span>
+
+              </div>
+
+              <div class="month">
+
+                <div class="bars-group">
+                  <div class="bar purple-bar h30"></div>
+                  <div class="bar pink-bar h40"></div>
+                  <div class="bar blue-bar h60"></div>
+                </div>
+
+                <span>MAR</span>
+
+              </div>
+
+              <div class="month">
+
+                <div class="bars-group">
+                  <div class="bar purple-bar h70"></div>
+                  <div class="bar pink-bar h20"></div>
+                  <div class="bar blue-bar h80"></div>
+                </div>
+
+                <span>APR</span>
+
+              </div>
+
+              <div class="month">
+
+                <div class="bars-group">
+                  <div class="bar purple-bar h50"></div>
+                  <div class="bar pink-bar h110"></div>
+                  <div class="bar blue-bar h50"></div>
+                </div>
+
+                <span>MAY</span>
+
+              </div>
+
+              <div class="month">
+
+                <div class="bars-group">
+                  <div class="bar purple-bar h110"></div>
+                  <div class="bar pink-bar h30"></div>
+                  <div class="bar blue-bar h110"></div>
+                </div>
+
+                <span>JUN</span>
+
+              </div>
+
+              <div class="month">
+
+                <div class="bars-group">
+                  <div class="bar purple-bar h60"></div>
+                  <div class="bar pink-bar h70"></div>
+                  <div class="bar blue-bar h30"></div>
+                </div>
+
+                <span>JUL</span>
+
+              </div>
+
+              <div class="month">
+
+                <div class="bars-group">
+                  <div class="bar purple-bar h40"></div>
+                  <div class="bar pink-bar h80"></div>
+                  <div class="bar blue-bar h60"></div>
+                </div>
+
+                <span>AUG</span>
+
+              </div>
+
+            </div>
+
+          </div>
+
+        </div>
+
+        <div class="graph-box small-graph">
+
+          <div class="graph-header">
+            <h3>Traffic Sources</h3>
+          </div>
+
+          <div class="traffic-image">
+
+            <img
+              src="graphic_image.png"
+              alt="Traffic Sources"
+            >
+
+          </div>
+
+          <div class="traffic-legend">
+            <div class="traffic-legend-item">
+              <div class="traffic-legend-color blue"></div>
+              <span class="traffic-legend-label">Search Engines</span>
+              <span class="traffic-legend-percent">30%</span>
+            </div>
+            <div class="traffic-legend-item">
+              <div class="traffic-legend-color teal"></div>
+              <span class="traffic-legend-label">Direct Click</span>
+              <span class="traffic-legend-percent">30%</span>
+            </div>
+            <div class="traffic-legend-item">
+              <div class="traffic-legend-color pink"></div>
+              <span class="traffic-legend-label">Bookmark Click</span>
+              <span class="traffic-legend-percent">40%</span>
+            </div>
+          </div>
+
+        </div>
+
+      </section>
+
+      </main>
+
+    </div>
+
+  </div>
+
+  <button class="floating-button">
+    <i class="fa-solid fa-cog"></i>
+  </button>
+
 </body>
 </html>
